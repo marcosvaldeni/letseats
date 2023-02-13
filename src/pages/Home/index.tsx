@@ -1,5 +1,11 @@
+import { Headilne } from "../../components/Headline";
+import { Hero } from "../../components/Hero";
+
 export function Home() {
   return (
-    <h1>home</h1>
+    <>
+      <Hero />
+      <Headilne />
+    </>
   );
 }
