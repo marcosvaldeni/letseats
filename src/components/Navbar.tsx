@@ -2,7 +2,7 @@ import { AiFillTag, AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from 'react
 import { BsFillCartFill } from 'react-icons/bs';
 import { TbTruckDelivery } from "react-icons/tb";
 import { MdFavorite, MdHelp } from "react-icons/md";
-import { FaUserFriends, FaWallet } from "react-icons/fa";
+import { FaMapMarkerAlt, FaUserFriends, FaWallet } from "react-icons/fa";
 import { useState } from 'react';
 
 export function Navbar() {
@@ -16,17 +16,12 @@ export function Navbar() {
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
       <div className="flex items-center">
         <div className="cursor-pointer" onClick={handleOpenOrCloseNav}>
-          <AiOutlineMenu size={30} />
+          <AiOutlineMenu size={40} />
         </div>
 
         <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
-          Let's <span className="font-bold">Eats</span>
+          Churrascaria <span className="font-bold">O Pitas</span>
         </h1>
-
-        <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
-          <p className='bg-black text-white rounded-full p-2'>Delivery</p>
-          <p className='p-2'>Pickup</p>
-        </div>
       </div>
 
       <div className='bg-gray-200 rounded-full flex items-center px-2 w-[200px] sw:w-[400px] lg:w-[500]'>
@@ -35,8 +30,8 @@ export function Navbar() {
       </div>
 
       <button className='bg-black text-white hidden md:flex items-center gap-2 py-2 rounded-full'>
-        <BsFillCartFill size={20} />
-        Cart
+        <FaMapMarkerAlt size={20} />
+        Directions
       </button>
 
       {nav && <div className='bg-black/80 fixed w-full h-screen z-10 top-0 left-0'></div>}
